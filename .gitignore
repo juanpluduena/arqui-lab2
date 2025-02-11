@@ -1,0 +1,12 @@
+benchmarks/*.img
+scripts/__pycache__/*
+se_results/*
+sim.log
+tests/*.o
+tests/*.hex
+tests/*.list
+tests/*.elf
+tests/.gdb_history
+tests/kernel.img
+tests/memory_map.txt
+tests/main.s
