@@ -1,0 +1,118 @@
+in_order_predictor_local_32kB_2vias
+
+simInsts                                                               8891.0
+system.cpu_cluster.cpus.numCycles                                      15112.0
+system.cpu_cluster.cpus.cpi                                            1.70
+system.cpu_cluster.cpus.branchPred.lookups                             2421.0
+system.cpu_cluster.cpus.branchPred.condPredicted                       2060.0
+system.cpu_cluster.cpus.branchPred.condIncorrect                       234.0
+system.cpu_cluster.cpus.branchPred.BTBLookups                          1024.0
+system.cpu_cluster.cpus.branchPred.BTBUpdates                          147.0
+system.cpu_cluster.cpus.branchPred.BTBHits                             1003.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntAlu         6641.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntMult        628.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntDiv         0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatAdd       480.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatCmp       0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatCvt       3.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatMult      0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::MemRead        513.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::MemWrite       266.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      765.0
+system.cpu_cluster.cpus.dcache.overallMisses::total                    15.0
+system.cpu_cluster.cpus.dcache.overallAccesses::total                  780.0
+system.cpu_cluster.cpus.dcache.replacements                            0.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     512.0
+system.cpu_cluster.cpus.dcache.ReadReq.accesses::total                 514.0
+system.cpu_cluster.cpus.dcache.WriteReq.hits::total                    253.0
+system.cpu_cluster.cpus.dcache.WriteReq.accesses::total                266.0
+system.cpu_cluster.cpus.icache.overallHits::total                      3752.0
+system.cpu_cluster.cpus.icache.overallMisses::total                    7.0
+system.cpu_cluster.cpus.icache.overallAccesses::total                  3759.0
+system.cpu_cluster.cpus.icache.replacements                            0.0
+system.cpu_cluster.l2.overallMisses::total                             14.0
+system.cpu_cluster.l2.overallAccesses::total                           15.0
+system.cpu_cluster.l2.replacements                                     0.0
+system.cpu_cluster.cpus.idleCycles                                     2379.0
+
+
+miss rate = condIncorrect / condPredicted + condIncorrect = 234 / (2060 + 234) = 0.1020
+
+
+in_order_predictor_tournament_32kB_2vias
+
+simInsts                                                               8891.0
+system.cpu_cluster.cpus.numCycles                                      14261.0
+system.cpu_cluster.cpus.cpi                                            1.60
+system.cpu_cluster.cpus.branchPred.lookups                             2287.0
+system.cpu_cluster.cpus.branchPred.condPredicted                       1909.0
+system.cpu_cluster.cpus.branchPred.condIncorrect                       136.0
+system.cpu_cluster.cpus.branchPred.BTBLookups                          975.0
+system.cpu_cluster.cpus.branchPred.BTBUpdates                          102.0
+system.cpu_cluster.cpus.branchPred.BTBHits                             932.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntAlu         6641.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntMult        628.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntDiv         0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatAdd       480.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatCmp       0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatCvt       3.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatMult      0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::MemRead        513.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::MemWrite       266.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      765.0
+system.cpu_cluster.cpus.dcache.overallMisses::total                    15.0
+system.cpu_cluster.cpus.dcache.overallAccesses::total                  780.0
+system.cpu_cluster.cpus.dcache.replacements                            0.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     512.0
+system.cpu_cluster.cpus.dcache.ReadReq.accesses::total                 514.0
+system.cpu_cluster.cpus.dcache.WriteReq.hits::total                    253.0
+system.cpu_cluster.cpus.dcache.WriteReq.accesses::total                266.0
+system.cpu_cluster.cpus.icache.overallHits::total                      3304.0
+system.cpu_cluster.cpus.icache.overallMisses::total                    7.0
+system.cpu_cluster.cpus.icache.overallAccesses::total                  3311.0
+system.cpu_cluster.cpus.icache.replacements                            0.0
+system.cpu_cluster.l2.overallMisses::total                             14.0
+system.cpu_cluster.l2.overallAccesses::total                           15.0
+system.cpu_cluster.l2.replacements                                     0.0
+system.cpu_cluster.cpus.idleCycles                                     2380.0
+
+miss rate = condIncorrect / condPredicted + condIncorrect = 136 / (1909 + 136) = 0.0665
+
+out_of_order_32kB_2via
+
+simInsts                                                               8891.0
+system.cpu_cluster.cpus.numCycles                                      10704.0
+system.cpu_cluster.cpus.cpi                                            1.20
+system.cpu_cluster.cpus.branchPred.lookups                             2112.0
+system.cpu_cluster.cpus.branchPred.condPredicted                       1757.0
+system.cpu_cluster.cpus.branchPred.condIncorrect                       133.0
+system.cpu_cluster.cpus.branchPred.BTBLookups                          878.0
+system.cpu_cluster.cpus.branchPred.BTBUpdates                          99.0
+system.cpu_cluster.cpus.branchPred.BTBHits                             851.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntAlu         6641.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntMult        628.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntDiv         0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatAdd       480.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatCmp       0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatCvt       3.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatMult      0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::MemRead        513.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::MemWrite       266.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      740.0
+system.cpu_cluster.cpus.dcache.overallMisses::total                    39.0
+system.cpu_cluster.cpus.dcache.overallAccesses::total                  779.0
+system.cpu_cluster.cpus.dcache.replacements                            0.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     509.0
+system.cpu_cluster.cpus.dcache.ReadReq.accesses::total                 513.0
+system.cpu_cluster.cpus.dcache.WriteReq.hits::total                    231.0
+system.cpu_cluster.cpus.dcache.WriteReq.accesses::total                266.0
+system.cpu_cluster.cpus.icache.overallHits::total                      3243.0
+system.cpu_cluster.cpus.icache.overallMisses::total                    10.0
+system.cpu_cluster.cpus.icache.overallAccesses::total                  3253.0
+system.cpu_cluster.cpus.icache.replacements                            1.0
+system.cpu_cluster.l2.overallMisses::total                             15.0
+system.cpu_cluster.l2.overallAccesses::total                           15.0
+system.cpu_cluster.l2.replacements                                     0.0
+system.cpu_cluster.cpus.idleCycles                                     1604.0
+
+miss rate = condIncorrect / condPredicted + condIncorrect = 133 / (1757 + 133) = 0.0703

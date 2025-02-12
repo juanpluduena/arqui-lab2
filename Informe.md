@@ -89,3 +89,26 @@ Gráfico comparativo:
 ![ej1f](/assets/ej1f.png "ej1f")
 
 En el gráfico se ve una clara diferencia en el número de ciclos, siendo muchísimo menor en el procesador out-of-order. Lo que resulta inesperado de este gráfico es la menor cantidad de hits a la caché por parte del procesador out-of-order, lo que se ve reflejado en la cantidad de ciclos ociosos, por lo que podemos concluir que el procesador out-of-order se pasa mucho tiempo activo accediendo a la memoria principal.
+
+## Ejercicio 2
+
+En el ejercicio 2 vamos a usar un programa que simula el flujo de calor en una placa de un material uniforme. Como en el ejercicio anterior, tenemos que escribir un programa no optimizado en código assembler, tal y como está en [simFisica.s](/benchmarks/simFisica.s).
+
+Lo primero que vamos a evaluar es el rendimiento del procesador utilizando diferentes cachés asociativas de 1 vía, 2 vías, 4 vías y 8 vías. El gráfico obtenido luego de realizar las simulaciones es el siguiente:
+
+![ej2c](/assets/ej2c.png "ej2c")
+
+Como se puede ver en el gráfico, el rendimiento no cambia al variar las vías de la caché. Esto sucede porque los accesos a memoria en el código son secuenciales y predecibles, lo que permite que la caché los maneje de manera eficiente. Cada array (x y x_temp) ocupa 3 KB (3072 bytes), por lo que incluso juntos (6 KB) caben cómodamente en una caché de 32 KB. Entonces podemos concluir que aumentando las vías no podemos mejorar el rendimiento. Tal vez el rendimiento se vea afectado si decidimos cambiar el tamaño de las matrices.
+
+---
+
+### Predictor Local vs Predictor Torneos
+
+El siguiente paso es comparar el rendimiento basado en el tipo de predictor. Para este gráfico usamos la métrica **Miss Rate** porque queremos evaluar la efectividad de los predictores de saltos. El **Miss Rate** nos indica qué porcentaje de predicciones de saltos fueron incorrectas respecto al total de decisiones de salto tomadas.  
+Para estos tests, vamos a comparar el rendimiento entre un procesador _in-order con predictor local_, _in-order con predictor torneos_ y _out-of-order con predictor torneos_. Todos con caché de 32kB y 2 vías.
+
+![ej2e](/assets/ej2e.png "ej2e")
+
+El gráfico muestra que el predictor torneos tiene un mejor desempeño que el predictor local, reduciendo la tasa de fallos de predicción de saltos. Esto era esperable, ya que el predictor torneos combina un predictor local y uno global, eligiendo dinámicamente cuál usar en función del historial de aciertos.
+
+Al utilizar un procesador out-of-order con el predictor torneos, la tasa de fallos sube ligeramente. Esto podría deberse a que el reordenamiento de instrucciones altera el patrón de ejecución de los saltos, afectando la precisión del predictor. Sin embargo, el impacto sigue siendo menor en comparación con el predictor local.

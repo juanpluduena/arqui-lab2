@@ -1,0 +1,27 @@
+b.
+
+32kB_1via
+system.cpu_cluster.cpus.numCycles                                      15112.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      765.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     512.0
+system.cpu_cluster.cpus.idleCycles                                     2379.0
+
+c.
+
+32kB_2via
+system.cpu_cluster.cpus.numCycles                                      15112.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      765.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     512.0
+system.cpu_cluster.cpus.idleCycles                                     2379.0
+
+32kB_4via
+system.cpu_cluster.cpus.numCycles                                      15112.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      765.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     512.0
+system.cpu_cluster.cpus.idleCycles                                     2379.0
+
+32kB_8via
+system.cpu_cluster.cpus.numCycles                                      15112.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      765.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     512.0
+system.cpu_cluster.cpus.idleCycles                                     2379.0

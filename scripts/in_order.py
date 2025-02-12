@@ -36,7 +36,7 @@ class DCache(Cache):
     mshrs = 4
     tgts_per_mshr = 8
     size = "32kB"
-    assoc = 1
+    assoc = 2
     write_buffers = 4
     prefetcher = StridePrefetcher(queue_size=4, degree=4)
 
@@ -51,5 +51,5 @@ class L2(Cache):
     write_buffers = 16
 
 cpu_name = __name__
-cpu_spec = (HPI.HPI, ICache, DCache, L2, BP_local)
+cpu_spec = (HPI.HPI, ICache, DCache, L2, BP_tournament)
 
