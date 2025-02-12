@@ -1,0 +1,76 @@
+b.
+
+8kB_1via
+system.cpu_cluster.cpus.numCycles                                      223011.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      427.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     427.0
+system.cpu_cluster.cpus.idleCycles                                     131334.0
+
+16kB_1via
+system.cpu_cluster.cpus.numCycles                                      223055.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      427.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     427.0
+system.cpu_cluster.cpus.idleCycles                                     131378.0
+
+32kB_1via
+system.cpu_cluster.cpus.numCycles                                      222606.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      430.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     430.0
+system.cpu_cluster.cpus.idleCycles                                     130968.0
+
+c.
+
+8kB_2via
+system.cpu_cluster.cpus.numCycles                                      191098.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      4768.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     4691.0
+system.cpu_cluster.cpus.idleCycles                                     111428.0
+
+16kB_2via
+system.cpu_cluster.cpus.numCycles                                      190062.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      4754.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     4690.0
+system.cpu_cluster.cpus.idleCycles                                     110367.0
+
+32kB_2via
+system.cpu_cluster.cpus.numCycles                                      190062.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      4754.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     4690.0
+system.cpu_cluster.cpus.idleCycles                                     110367.0
+
+8kB_4via
+system.cpu_cluster.cpus.numCycles                                      293537.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      10753.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     7683.0
+system.cpu_cluster.cpus.idleCycles                                     225109.0
+
+16kB_4via
+system.cpu_cluster.cpus.numCycles                                      293621.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      10753.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     7683.0
+system.cpu_cluster.cpus.idleCycles                                     225190.0
+
+32kB_4via
+system.cpu_cluster.cpus.numCycles                                      293621.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      10753.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     7683.0
+system.cpu_cluster.cpus.idleCycles                                     225190.0
+
+8kB_8via
+system.cpu_cluster.cpus.numCycles                                      293573.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      10753.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     7683.0
+system.cpu_cluster.cpus.idleCycles                                     225145.0
+
+16kB_8via
+system.cpu_cluster.cpus.numCycles                                      293621.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      10753.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     7683.0
+system.cpu_cluster.cpus.idleCycles                                     225190.0
+
+32kB_8via
+system.cpu_cluster.cpus.numCycles                                      293621.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      10753.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     7683.0
+system.cpu_cluster.cpus.idleCycles                                     225190.0
+
