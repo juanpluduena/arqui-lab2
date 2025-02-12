@@ -66,3 +66,18 @@ Cuando llegamos a 4 y 8 vías, vemos que sus métricas son exactamente iguales, 
 Los datos con los valores exactos se encuentran en este [archivo](/ej1/ej1d.txt).
 
 ___
+
+### Código optimizado vs no optimizado
+
+En esta parte, vamos a comparar como un código optimizado puede tener un impacto significativo en el rendimiento de un microprocesador.  
+Para lograr esto, se usó el metodo de loop unrolling con un factor de 8 que se puede ver en [daxpy_optimizado.s](/benchmarks/daxpy_optimizado.s).
+
+Lo que se buscaba con esta optimización que se ejecutó en un procesador de `32kB` de memoria caché de datos y 2 vías, era conseguir resultados parecidos a los de `32kB` con 1 vía en el cuál se corrió un código no optimizado, por lo que los gráficos están basados en esa comparación.
+
+Gŕafico comparativo:
+![ej1e](/assets/ej1e.png "ej1e")
+
+En el gráfico vemos un menor número de ciclos, lo que significa que se mejoro la eficiencia del procesamiento, reduciendo el tiempo total de ejecución. También vemos que los hits a la caché aumentaron con respecto al código no optimizado, esto significa que hay menos accesos a la memoria principal mejorando así el rendimiento. Por último vemos como la versión optimizada tiene más ciclos ociosos, esto debido a una mejor utilización de la caché, lo que reduce los tiempos de espera por accesos a memoria, permitiendo que el procesador pase más tiempo inactivo en lugar de estar ocupado esperando datos.
+
+___
+

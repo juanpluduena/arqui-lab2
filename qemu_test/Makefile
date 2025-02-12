@@ -15,8 +15,8 @@ clean :
 	rm -f *.img
 	rm -f memory_map.txt
 
-main.o : daxpy.s
-	$(ARMGNU)-as -g $(AOPS) daxpy.s -o main.o
+main.o : daxpy_optimizado.s
+	$(ARMGNU)-as -g $(AOPS) daxpy_optimizado.s -o main.o
 
 
 kernel.img : memmap main.o

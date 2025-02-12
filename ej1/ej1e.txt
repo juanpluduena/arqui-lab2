@@ -1,0 +1,5 @@
+32kB_1via_optimizado
+system.cpu_cluster.cpus.numCycles                                      170376.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      8302.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     6226.0
+system.cpu_cluster.cpus.idleCycles                                     129488.0
