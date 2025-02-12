@@ -25,7 +25,7 @@ main:
 	bl		m5_dump_stats
 
 	ldr     X0, N
-	ldr     X10, Alpha 	// cambiamos aca porque no andaba! (sacamos el =)
+	ldr     X10, Alpha 	// saque el = porque no andaba
 	ldr     X2, =X
 	ldr     X3, =Y
 	ldr     X4, =Z
