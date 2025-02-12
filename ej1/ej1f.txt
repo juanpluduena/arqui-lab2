@@ -1,0 +1,4 @@
+system.cpu_cluster.cpus.numCycles                                      37089.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      5938.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     4126.0
+system.cpu_cluster.cpus.idleCycles                                     672.0

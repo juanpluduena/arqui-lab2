@@ -81,3 +81,11 @@ En el gráfico vemos un menor número de ciclos, lo que significa que se mejoro 
 
 ___
 
+### In-order vs out-of-order
+
+En esta parte vamos a comparar el rendimiento de un procesador **in-order**, que ejecuta las instrucciones en el mismo orden en que aparecen en el código, y un procesador **out-of-order**, que puede reordenarlas dinámicamente para optimizar el uso de sus unidades de ejecución y minimizar latencias.
+
+Gráfico comparativo:
+![ej1f](/assets/ej1f.png "ej1f")
+
+En el gráfico se ve una clara diferencia en el número de ciclos, siendo muchísimo menor en el procesador out-of-order. Lo que resulta inesperado de este gráfico es la menor cantidad de hits a la caché por parte del procesador out-of-order, lo que se ve reflejado en la cantidad de ciclos ociosos, por lo que podemos concluir que el procesador out-of-order se pasa mucho tiempo activo accediendo a la memoria principal.
